@@ -54,30 +54,78 @@ function gotResult(error, results) {
     prediction_1 = results[0].label;
     prediction_2 = results[1].label;
     speak();
-    if(results[0].label == "happy")
+    if(results[0].label == "hi")
     {
-	    document.getElementById("update_emoji").innerHTML = "&#128522;";
+	    document.getElementById("update_emoji").innerHTML = "&#9995;";
     }
-    if(results[0].label == "sad")
+    if(results[0].label == "no")
     {
-	    document.getElementById("update_emoji").innerHTML = "&#128532;";
+	    document.getElementById("update_emoji").innerHTML = "&#128070;";
     }
-    if(results[0].label == "angry")
+    if(results[0].label == "victory")
     {
-	    document.getElementById("update_emoji").innerHTML = "&#128548;";
+	    document.getElementById("update_emoji").innerHTML = "&#9996;";
     }
-
-    if(results[1].label == "happy")
+    if(results[0].label == "good")
     {
-	    document.getElementById("update_emoji2").innerHTML = "&#128522;";
+	    document.getElementById("update_emoji").innerHTML = "&#128077;";
     }
-    if(results[1].label == "sad")
+    if(results[0].label == "bad")
     {
-	    document.getElementById("update_emoji2").innerHTML = "&#128532;";
+	    document.getElementById("update_emoji").innerHTML = "&#128078;";
     }
-    if(results[1].label == "angry")
+    if(results[0].label == "clap")
     {
-	    document.getElementById("update_emoji2").innerHTML = "&#128548;";
+	    document.getElementById("update_emoji").innerHTML = "&#128079;";
+    }
+    if(results[0].label == "ok")
+    {
+	    document.getElementById("update_emoji").innerHTML = "&#128076;";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    if(results[1].label == "hi")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#9995;";
+    }
+    if(results[1].label == "no")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#128070;";
+    }
+    if(results[1].label == "victory")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#9996;";
+    }
+    if(results[1].label == "good")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#128077;";
+    }
+    if(results[1].label == "bad")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#128078;";
+    }
+    if(results[1].label == "clap")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#128079;";
+    }
+    if(results[1].label == "ok")
+    {
+	    document.getElementById("update_emoji2").innerHTML = "&#128076;";
     }
   }
 }
